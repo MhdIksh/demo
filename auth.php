@@ -2,7 +2,7 @@
 include 'db.php';
 
 $username = $_POST['user'];
-$password = $_POST['pass'];
+$password = $_POST['pass']; 
 
 // to prevent from MySQL injection
 $username = stripcslashes($username);

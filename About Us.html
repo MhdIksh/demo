@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malcome</title>
+    <style>
+        body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #080808;
+}
+
+.about{
+            height: 100vh;
+            top:100px;
+            align-items: center;
+            
+            color: aliceblue;
+        }
+
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+    padding: 15px;
+    background-color: rgba(4, 0, 0, 0.4); /* 60% transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.intro, .section-paragraph {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: aliceblue;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.services-list {
+    list-style:none;
+    margin-left: 20px;
+    color: #ccc;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">Photography</h2>
+            <nav class="navigation">
+                <a href="Home.html" class="navbar">Home </a>
+                <a href="Pricing.php" class="navbar">Pricing </a>
+                <a href="Gallery.php" class="navbar">Gallery </a>
+                <a href="Contact US.php" class="navbar">Contact Us</a>
+                <a href="About Us.html" class="navbar">About Us</a>
+                <button class="btnlogin-popup">Login</button>
+            </nav>        
+    </header>
+
+    <div class="wrapper">
+
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form name="f1" action = "auth.php" onsubmit = "return validation()" method = "POST">
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="name" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">Remember me
+                    </label> 
+                    <a href="#">Forgot Password?</a>
+                    
+                </div>
+                
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? 
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">I agree to the terms & conditions
+                    </label>
+                    
+                </div>
+                
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account? 
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+<section class="about">
+    <div class="container">
+        <h1 class="main-heading">Welcome to Malcom Lismore’s Photography</h1>
+        <p class="intro">At Malcom Lismore’s Photography, we are passionate about capturing the beauty, emotion, and essence of life's most treasured moments. Founded on a love for photography and a dedication to excellence, our mission is to turn your memories into timeless works of art.</p>
+        
+        <h2 class="section-heading">Our Story</h2>
+        <p class="section-paragraph">Our journey began with a simple desire to freeze moments in time. What started as a personal passion quickly blossomed into a professional endeavor. Today, Malcom Lismore’s Photography stands as a testament to our commitment to quality, creativity, and the relentless pursuit of perfection.</p>
+        
+        <h2 class="section-heading">Our Philosophy</h2>
+        <p class="section-paragraph">We believe that every picture tells a story, and it is our privilege to help narrate yours. Our approach is personalized and thoughtful, ensuring that each photo reflects the unique spirit and emotion of the moment. We strive to create a comfortable and enjoyable experience for our clients, making the process as memorable as the photos themselves.</p>
+        
+        <h2 class="section-heading">Our Services</h2>
+        <ul class="services-list">
+            <li>Weddings: We specialize in capturing the magic and romance of your wedding day, creating images that you will cherish forever.</li>
+            <li>Portraits: From individual portraits to family sessions, we craft images that highlight the personality and essence of our subjects.</li>
+            <li>Events: Whether it's a corporate function, a birthday party, or any other special event, we document the moments that matter most.</li>
+            <li>Natural: Our natural photography services capture the beauty of your surroundings and subjects in their most authentic state, providing a genuine and professional representation of your products and services.</li>
+        </ul>
+        
+        <h2 class="section-heading">Our Commitment</h2>
+        <p class="section-paragraph">At Malcom Lismore’s Photography, we are committed to delivering not just photos, but experiences. We invest time in understanding your vision, so we can bring it to life through our lens. Our dedication to quality, creativity, and customer satisfaction is what sets us apart.</p>
+    </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
